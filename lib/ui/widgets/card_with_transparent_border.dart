@@ -24,7 +24,7 @@ class CardWithTransparentAndBorder extends StatelessWidget {
       borderRadius: borderRadius,
       child: Container(
         width: 214,
-        height: 214,
+        height: 244,
         padding: const EdgeInsets.all(32),
         decoration: BoxDecoration(
           color: selected ? Colors.black : null,
@@ -39,14 +39,14 @@ class CardWithTransparentAndBorder extends StatelessWidget {
               size: 32,
               color: selected ? secondaryColor : Colors.black,
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: 8),
             Text(
               title,
               style: Theme.of(context).textTheme.subtitle1!.copyWith(
                   color: selected ? Colors.white : Colors.black,
                   fontWeight: FontWeight.bold),
             ),
-            const SizedBox(height: 8),
+            const SizedBox(height: 3),
             Text(
               description,
               style: Theme.of(context)
@@ -54,7 +54,7 @@ class CardWithTransparentAndBorder extends StatelessWidget {
                   .subtitle2!
                   .copyWith(color: Colors.grey),
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: 10),
             Row(
               children: [
                 Text(
@@ -63,7 +63,7 @@ class CardWithTransparentAndBorder extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                       color: selected ? secondaryColor : Colors.black),
                 ),
-                const SizedBox(width: 8),
+                const SizedBox(width: 3),
                 Icon(
                   Icons.arrow_forward,
                   size: 18,
