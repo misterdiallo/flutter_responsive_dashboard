@@ -1,7 +1,10 @@
 # Flutter Responsive Dashboard
 A Fully responsive and multiplatform Dashboard using flutter.
 ### Demonstration Video
-<video src="https://github.com/misterdiallo/flutter_responsive_dashboard/blob/main/screenshots/screenrecording.mp4" controls="controls" style="max-width: 730px;">
-</video>
 
+
+
+
+
+https://user-images.githubusercontent.com/77695206/205651748-d911dd9e-f360-44b8-8279-7a378eb81c25.mp4
 
