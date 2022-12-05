@@ -6,14 +6,14 @@ class MainMenuData {
   String name;
   IconData? icon;
   Widget page;
-  String? route;
+  String route;
   String type_opening;
 
   MainMenuData({
     required this.name,
     this.icon,
     required this.page,
-    this.route,
+    required this.route,
     this.type_opening = "page",
   });
 }

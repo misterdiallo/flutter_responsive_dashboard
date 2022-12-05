@@ -3,7 +3,8 @@ import 'package:responsive_dashboard/constant/app_colors.dart';
 import 'package:responsive_dashboard/constant/constant_design.dart';
 
 class MobileScaffold extends StatefulWidget {
-  const MobileScaffold({super.key});
+  final Widget content;
+  const MobileScaffold({super.key, required this.content});
 
   @override
   State<MobileScaffold> createState() => _MobileScaffoldState();
@@ -16,10 +17,8 @@ class _MobileScaffoldState extends State<MobileScaffold> {
       backgroundColor: AppColors.background,
       appBar: myAppBar,
       drawer: myDrawer,
-      body: const SafeArea(
-        child: Center(
-          child: Text("Mobile Screen"),
-        ),
+      body: SafeArea(
+        child: widget.content,
       ),
     );
   }

@@ -3,7 +3,8 @@ import 'package:responsive_dashboard/constant/app_colors.dart';
 import 'package:responsive_dashboard/constant/constant_design.dart';
 
 class TabletScaffold extends StatefulWidget {
-  const TabletScaffold({super.key});
+  final Widget content;
+  const TabletScaffold({super.key, required this.content});
 
   @override
   State<TabletScaffold> createState() => _TabletScaffoldState();
@@ -16,11 +17,7 @@ class _TabletScaffoldState extends State<TabletScaffold> {
       backgroundColor: AppColors.background,
       appBar: myAppBar,
       drawer: myDrawer,
-      body: const SafeArea(
-        child: Center(
-          child: Text("Tablet Screen"),
-        ),
-      ),
+      body: SafeArea(child: widget.content),
     );
   }
 }

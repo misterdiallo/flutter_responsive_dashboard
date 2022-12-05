@@ -3,7 +3,8 @@ import 'package:responsive_dashboard/constant/app_colors.dart';
 import 'package:responsive_dashboard/constant/constant_design.dart';
 
 class DesktopScaffold extends StatefulWidget {
-  const DesktopScaffold({super.key});
+  final Widget content;
+  const DesktopScaffold({super.key, required this.content});
 
   @override
   State<DesktopScaffold> createState() => _DesktopScaffoldState();
@@ -17,15 +18,13 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
       body: SafeArea(
         child: Row(
           children: [
-            // Menu
+            //! Menu
             myDrawer,
-            // Content
+            //! Content
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
-                Center(
-                  child: Text("Desktop Screen"),
-                ),
+              children: [
+                widget.content,
               ],
             ),
           ],

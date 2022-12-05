@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/constant/app_colors.dart';
 import 'package:responsive_dashboard/constant/data/app_basic_data.dart';
 import 'package:responsive_dashboard/constant/data/main_menu_data.dart';
+import 'package:go_router/go_router.dart';
 
 var myAppBar = AppBar(
   backgroundColor: AppColors.appbarBackground,
@@ -12,22 +13,24 @@ var myDrawer = Drawer(
   child: Column(
     children: [
       DrawerHeader(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Icon(
-              AppBaseData.icon,
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            Text(
-              AppBaseData.name,
-              style: const TextStyle(
-                fontWeight: FontWeight.bold,
+        child: InkWell(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(
+                AppBaseData.icon,
               ),
-            )
-          ],
+              const SizedBox(
+                height: 10,
+              ),
+              Text(
+                AppBaseData.name,
+                style: const TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              )
+            ],
+          ),
         ),
       ),
       Expanded(
@@ -36,6 +39,7 @@ var myDrawer = Drawer(
           itemBuilder: (context, index) {
             MainMenuData menu = listMainMenu[index];
             return ListTile(
+              onTap: () => context.go(menu.route),
               leading: menu.icon != null
                   ? Icon(
                       menu.icon,
