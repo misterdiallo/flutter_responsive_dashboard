@@ -20,33 +20,45 @@ class MainMenuData {
 
 List<MainMenuData> listMainMenu = [
   MainMenuData(
-    name: "Home",
+    name: "Dashboard",
     page: Container(),
-    icon: Icons.home_filled,
+    icon: Icons.analytics,
     route: "/",
   ),
   MainMenuData(
-    name: "Product",
+    name: "Commandes",
     page: Container(),
-    icon: Icons.production_quantity_limits_rounded,
+    icon: Icons.flight_takeoff,
+    route: "/stock",
+  ),
+  MainMenuData(
+    name: "Articles",
+    page: Container(),
+    icon: Icons.token,
     route: "/product",
   ),
   MainMenuData(
-    name: "Service",
+    name: "Ventes",
     page: Container(),
-    icon: Icons.supervised_user_circle_rounded,
-    route: "/service",
+    icon: Icons.add_shopping_cart,
+    route: "/sale",
   ),
   MainMenuData(
-    name: "Contact",
+    name: "Personel",
     page: Container(),
-    icon: Icons.contact_mail,
-    route: "/contact",
+    icon: Icons.supervisor_account,
+    route: "/staff",
   ),
   MainMenuData(
-    name: "Logout",
+    name: "Paramètre",
     page: Container(),
-    icon: Icons.logout,
+    icon: Icons.settings,
+    route: "/setting",
+  ),
+  MainMenuData(
+    name: "Deconnexion",
+    page: Container(),
+    icon: Icons.logout_rounded,
     route: "/logout",
   ),
 ];
