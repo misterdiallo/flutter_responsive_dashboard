@@ -1,16 +1,10 @@
-# responsive_dashboard
+# Flutter Responsive Dashboard
 
-A new Flutter project.
+A Fully responsive and multiplatform Dashboard using flutter.
 
-## Getting Started
+[![Watch the video](https://raw.githubusercontent.com/misterdiallo/flutter_responsive_dashboard/main/screenshots/screenrecording-%E5%B0%81%E9%9D%A2.jpg)](https://github.com/misterdiallo/flutter_responsive_dashboard/blob/main/screenshots/screenrecording.mp4)
 
-This project is a starting point for a Flutter application.
+### ScreenShots
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[<img src="/screenshots/Screen%20Shot%202022-12-05%20at%208.21.37%20PM.png?raw=true" width="450" >]()
+[<img src="/screenshots/Screen%20Shot%202022-12-05%20at%208.44.31%20PM.png?raw=true" width="400" >]()
